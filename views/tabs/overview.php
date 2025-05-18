@@ -292,17 +292,6 @@ Content-Type: application/json
         position: relative;
     }
 
-    .wo-steps li::before {
-        content: '';
-        position: absolute;
-        top: 8px;
-        left: -15px;
-        width: 8px;
-        height: 8px;
-        background-color: #2271b1;
-        border-radius: 50%;
-    }
-
     .wo-steps li strong {
         color: #2271b1;
     }

@@ -68,7 +68,7 @@ class WO_Remote_Logout
         define('WO_REMOTE_LOGOUT_VERSION', '1.3.0');
         define('WO_REMOTE_LOGOUT_PATH', plugin_dir_path(dirname(__FILE__)));
         define('WO_REMOTE_LOGOUT_URL', plugin_dir_url(dirname(__FILE__)));
-        define('WO_REMOTE_LOGOUT_BASENAME', plugin_basename(dirname(dirname(__FILE__))) . '/wp-oauth-server-extension.php');
+        define('WO_REMOTE_LOGOUT_BASENAME', plugin_basename(dirname(dirname(__FILE__))) . '/wp-oauth-logout-extension.php');
         define('WO_REMOTE_LOGOUT_LOG_ENABLED', true);
         define('WO_REMOTE_LOGOUT_OPTION_KEY', $this->option_key);
     }
@@ -282,7 +282,7 @@ class WO_Remote_Logout
         if (!class_exists('WO_Server')) {
 ?>
             <div class="notice notice-error">
-                <p><strong>WP OAuth Server Extension</strong> requires the WP OAuth Server plugin to be installed and activated. <a href="https://wp-oauth.com" target="_blank">Get WP OAuth Server</a></p>
+                <p><strong>WP OAuth Logout Extension</strong> requires the WP OAuth Server plugin to be installed and activated. <a href="https://wp-oauth.com" target="_blank">Get WP OAuth Server</a></p>
             </div>
 <?php
         }

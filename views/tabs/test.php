@@ -507,7 +507,6 @@ $tokens_revoked = isset($_GET['tokens']) ? intval($_GET['tokens']) : 0;
 
     .wo-endpoint-code {
         display: block;
-        width: 100%;
         padding: 8px 12px;
         background: #f1f1f1;
         border-radius: 4px;

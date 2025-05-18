@@ -1,1 +1,61 @@
-/.DS_Store
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+.directory
+
+# Editor/IDE Files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.phpstorm.meta.php
+*.swp
+*.swo
+*~
+
+# Dependency Management
+/node_modules/
+/vendor/
+composer.lock
+package-lock.json
+yarn.lock
+
+# Build Artifacts
+.sass-cache/
+.tmp/
+/dist/
+
+# Development Files
+.env
+.env.*
+!.env.example
+phpcs.xml
+phpunit.xml
+.phpunit.result.cache
+.phpunit.cache/
+phpcs.log
+/tests/logs/
+/tests/reports/
+
+# WordPress Specific
+/wp-content/uploads/
+/wp-content/upgrade/
+
+# Plugin Specific - Ignore source files when using minified versions in production
+# assets/js/admin.js
+# assets/js/tabs-fix.js
+# assets/js/wo-admin.js
+# assets/css/admin.css
+# assets/css/wo-admin.css
+
+# Logs
+*.log
+/logs/
+
+# Backup Files
+*.bak
+*.backup
+*-backup-*
+*.sql
+*.sql.gz

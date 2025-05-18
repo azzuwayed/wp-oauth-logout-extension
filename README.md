@@ -26,6 +26,20 @@ This extension has been optimized for performance:
 - **Mobile Optimizations:** Responsive design with mobile-first approach and performance considerations
 - **Organized Code Structure:** Well-organized code with logical sections for better maintainability
 
+## CSS/JS Minification
+
+# Install Node.js tools globally
+
+npm install -g clean-css-cli uglify-js
+
+# Minify CSS
+
+cleancss -o assets/css/combined.min.css assets/css/combined.css
+
+# Minify JavaScript
+
+uglifyjs assets/js/combined.js -o assets/js/combined.min.js -c -m
+
 ## Installation
 
 1. Upload the plugin files to the `/wp-content/plugins/wp-oauth-remote-logout` directory
@@ -73,7 +87,7 @@ wp-oauth-server-extension/
 │       └── test.php         # Testing tools tab
 │
 ├── uninstall.php            # Cleanup on plugin deletion
-└── wp-oauth-server-extension.php  # Main plugin file
+└── wp-oauth-logout-extension.php  # Main plugin file
 ```
 
 ## UI/UX Improvements
