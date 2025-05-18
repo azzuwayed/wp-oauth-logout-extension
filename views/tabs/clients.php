@@ -51,7 +51,6 @@ $clients = isset($_clients) ? $_clients : array();
                         <tr>
                             <th><?php _e('Client ID', 'wp-oauth-remote-logout'); ?></th>
                             <th><?php _e('Client Name', 'wp-oauth-remote-logout'); ?></th>
-                            <th><?php _e('Client Secret', 'wp-oauth-remote-logout'); ?></th>
                             <th><?php _e('Redirect URI', 'wp-oauth-remote-logout'); ?></th>
                             <th><?php _e('Status', 'wp-oauth-remote-logout'); ?></th>
                         </tr>
@@ -63,20 +62,6 @@ $clients = isset($_clients) ? $_clients : array();
                                     <code class="client-id"><?php echo esc_html($client['client_id']); ?></code>
                                 </td>
                                 <td class="client-name"><?php echo esc_html($client['name']); ?></td>
-                                <td>
-                                    <div class="client-secret-container">
-                                        <code class="client-secret"><?php echo isset($client['client_secret']) ? esc_html(substr($client['client_secret'], 0, 5) . '...') : 'N/A'; ?></code>
-                                        <?php if (isset($client['client_secret'])) : ?>
-                                            <button type="button" class="button-link toggle-secret"
-                                                data-secret="<?php echo esc_attr($client['client_secret']); ?>"
-                                                data-showing="false">
-                                                <span class="show-text"><?php _e('Show', 'wp-oauth-remote-logout'); ?></span>
-                                                <span class="hide-text" style="display:none"><?php _e('Hide', 'wp-oauth-remote-logout'); ?></span>
-                                                <span class="dashicons dashicons-visibility"></span>
-                                            </button>
-                                        <?php endif; ?>
-                                    </div>
-                                </td>
                                 <td class="redirect-uri">
                                     <?php if (!empty($client['redirect_uri'])) : ?>
                                         <code><?php echo esc_html($client['redirect_uri']); ?></code>

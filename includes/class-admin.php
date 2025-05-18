@@ -59,31 +59,22 @@ class WO_Remote_Logout_Admin
         // Enqueue CSS
         wp_enqueue_style(
             'wo-remote-logout-admin',
-            WO_REMOTE_LOGOUT_URL . 'assets/css/admin.css',
+            WO_REMOTE_LOGOUT_URL . 'assets/css/combined.min.css',
             array(),
             WO_REMOTE_LOGOUT_VERSION
         );
 
-        // Enqueue JS
+        // Enqueue combined JS file 
         wp_enqueue_script(
-            'wo-remote-logout-admin',
-            WO_REMOTE_LOGOUT_URL . 'assets/js/admin.js',
+            'wo-remote-logout-combined',
+            WO_REMOTE_LOGOUT_URL . 'assets/js/combined.js',
             array('jquery'),
             WO_REMOTE_LOGOUT_VERSION,
             true
         );
 
-        // Enqueue tabs fix script - no jQuery dependency
-        wp_enqueue_script(
-            'wo-remote-logout-tabs-fix',
-            WO_REMOTE_LOGOUT_URL . 'assets/js/tabs-fix.js',
-            array(),
-            WO_REMOTE_LOGOUT_VERSION,
-            false // Load in head for immediate execution
-        );
-
         // Add localized script data
-        wp_localize_script('wo-remote-logout-admin', 'woRemoteLogout', array(
+        wp_localize_script('wo-remote-logout-combined', 'woRemoteLogout', array(
             'ajaxUrl' => admin_url('admin-ajax.php'),
             'nonce' => wp_create_nonce('wo-remote-logout-admin'),
             'messages' => array(

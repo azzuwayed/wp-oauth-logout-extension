@@ -1,14 +1,45 @@
 # WP OAuth Server - Remote Logout Extension
 
-A WordPress plugin that adds a Remote Logout Endpoint to the WP OAuth Server plugin with zero configuration.
+This extension adds a remote logout endpoint to WP OAuth Server with zero configuration.
 
 ## Features
 
-- Remote Logout REST API endpoint for OAuth clients
-- Activity logging of all logout operations
-- Detailed statistics and analytics
-- Debugging and testing tools
-- Modern and responsive admin interface
+- Adds a logout endpoint to the OAuth server
+- Automatically revokes all access tokens for a user
+- Logs and tracks logout events
+- Simple to configure and use
+- Compatible with all OAuth 2.0 grant types
+- Works with all WP OAuth Server versions 3.0.0+
+
+## Performance Optimizations
+
+This extension has been optimized for performance:
+
+- **Combined JavaScript & CSS:** All JavaScript and CSS files have been merged into single files to reduce HTTP requests
+- **Minified Versions:** Both JavaScript and CSS have minified versions available for production use
+- **Improved Animation:** Uses `requestAnimationFrame` for smoother animations and transitions
+- **DOM Caching:** DOM elements are cached to reduce costly DOM queries
+- **CSS Transitions:** Uses CSS transitions instead of JavaScript animations when possible
+- **Modern Browser Support:** Uses modern browser APIs with fallbacks when needed
+- **Reduced Debug Code:** Removed unnecessary console logging and debug code in production files
+- **Optimized Selectors:** Improved CSS selectors and grouped rules for better performance
+- **Mobile Optimizations:** Responsive design with mobile-first approach and performance considerations
+- **Organized Code Structure:** Well-organized code with logical sections for better maintainability
+
+## Installation
+
+1. Upload the plugin files to the `/wp-content/plugins/wp-oauth-remote-logout` directory
+2. Activate the plugin through the 'Plugins' screen in WordPress
+3. Use the Settings screen to configure the plugin
+4. (Optional) Customize additional options in the plugin's settings
+
+## License
+
+This plugin is licensed under the GPL v2 or later.
+
+## Credits
+
+Developed by Abdullah Alzuwayed
 
 ## Code Structure
 

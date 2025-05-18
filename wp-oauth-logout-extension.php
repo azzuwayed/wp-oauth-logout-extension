@@ -59,15 +59,15 @@ function wo_extension_admin_scripts($hook)
     // Enqueue shared CSS
     wp_enqueue_style(
         'wo-admin-styles',
-        $plugin_url . 'assets/css/wo-admin.css',
+        $plugin_url . 'assets/css/combined.min.css',
         array(),
         WO_EXTENSION_VERSION
     );
 
-    // Enqueue shared JavaScript
+    // Enqueue combined JavaScript
     wp_enqueue_script(
         'wo-admin-scripts',
-        $plugin_url . 'assets/js/wo-admin.js',
+        $plugin_url . 'assets/js/combined.js',
         array('jquery'),
         WO_EXTENSION_VERSION,
         true
